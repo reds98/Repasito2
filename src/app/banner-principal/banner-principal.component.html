@@ -1,6 +1,8 @@
 <h1>Nombre:{{nombrePersona}} </h1>
 <p>Descripcion de la persona</p>
 <p>Edad:{{edad}}</p>
+<h2 *ngIf="mostarInformacionSentimental">La persona es Casada</h2>
+<button (click)="cambiarEstadoInformacionSentimental()">Ocular/Mostrar informacion Sentimental</button>
 <p>La persona es {{resultado}}</p>
 <h3 *ngIf="edad>=18">La persona puede tomar guaro</h3>
 <h4>Gusto de la persona</h4>

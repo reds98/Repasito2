@@ -11,6 +11,12 @@ export class BannerPrincipalComponent  {
   edad:number=19
   resultado:string=""
   gustos:Array<string>=["Correr","Viajar","Cocinar","Cine"]
+  mostarInformacionSentimental:boolean=true
+  cambiarEstadoInformacionSentimental(){
+    //true==>false
+    //false==>true
+    this.mostarInformacionSentimental=!this.mostarInformacionSentimental
+  }
   verifacionEdad(){
     if(this.edad>=18){
       this.resultado="Mayor de edad"
