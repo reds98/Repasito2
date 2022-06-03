@@ -2,5 +2,10 @@
 <p>Descripcion de la persona</p>
 <p>Edad:{{edad}}</p>
 <p>La persona es {{resultado}}</p>
+<h3 *ngIf="edad>=18">La persona puede tomar guaro</h3>
+<h4>Gusto de la persona</h4>
+<ul>
+    <li *ngFor="let item of gustos">{{item}}</li>
+</ul>
 <button (click)="cambiarNombre()">Presionar para saludar</button>
 <button (click)="verifacionEdad()">Verficar Edad</button>

@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class BannerPrincipalComponent  {
 
   nombrePersona:string="Daniel"
-  edad:number=16
+  edad:number=19
   resultado:string=""
+  gustos:Array<string>=["Correr","Viajar","Cocinar","Cine"]
   verifacionEdad(){
     if(this.edad>=18){
       this.resultado="Mayor de edad"
